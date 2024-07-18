@@ -1,4 +1,3 @@
-```markdown
 Accompanied script for manuscript "Tumor-Associated Antigen Burden Associates with Immune Checkpoint Blockade Benefit in Non-exhausted Tumor Immune Context"
 
 License
