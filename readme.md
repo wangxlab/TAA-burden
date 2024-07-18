@@ -1,16 +1,16 @@
-Accompanied script for manuscript "Tumor-Associated Antigen Burden Associates with Immune Checkpoint Blockade Benefit in Non-exhausted Tumor Immune Context"
+## Accompanied script for manuscript "Tumor-Associated Antigen Burden Associates with Immune Checkpoint Blockade Benefit in Non-exhausted Tumor Immune Context"
 
-License
+## License
 
 This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. See the [LICENSE](LICENSE) file for details.
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Example script for calculating TAB based on a TAA gene list
+## Example script for calculating TAB based on a TAA gene list
 
 This code has been tested in R version 4.1.2. To install, please unzip the package into a hard drive location and specify the work directory below.
 
-Load the data and R module
+### Load the data and R module
 
 Set work directory. Please change to the location where the package is unzipped.
 
