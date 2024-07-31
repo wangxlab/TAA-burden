@@ -43,7 +43,7 @@ Load the list of known CT antigens.
 ```r
 load("Data/known.CT.antigen.list.rda")
 ```
-Load the list of predicted tumor associated antigens. 
+Load the list of predicted tumor associated antigens based on Heterogenous Expression Profile Analysis (HEPA). Putative TAAs expressed in blood cells are excluded.
 
 ```r
 load("Data/HEPA.TAA.list.rda")
