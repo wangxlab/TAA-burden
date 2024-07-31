@@ -38,10 +38,15 @@ Load sample information for GTEX normal tissue samples.
 load("Data/GTEX_Normal.exp.rda")
 ```
 
-Load the list of known CT antigens. This can be replaced with any customized TAA gene list.
+Load the list of known CT antigens. 
 
 ```r
 load("Data/known.CT.antigen.list.rda")
+```
+Load the list of predicted tumor associated antigens. 
+
+```r
+load("Data/HEPA.TAA.list.rda")
 ```
 
 ### Calculate TAA burden
@@ -49,10 +54,19 @@ load("Data/known.CT.antigen.list.rda")
 Calculate cancer testis antigen burden based on CT antigens.
 
 ```r
-TAA.burden = calculate.TAB.combine(
+CTA.burden = calculate.TAB.combine(
   tumor.expData = Tumor.exp, 
   normal.expData = GTEX_Normal.exp, 
   TAA.List = known.CT.antigen.list
 )
 ```
 
+Calculate tumor associated antigen burden based on putative TAAs identified by HEPA analysis, and known CT antigens.
+
+```r
+TAA.burden = calculate.TAB.combine(
+  tumor.expData = Tumor.exp, 
+  normal.expData = GTEX_Normal.exp, 
+  TAA.List = c(HEPA.TAA.list,known.CT.antigen.list)
+)
+```
