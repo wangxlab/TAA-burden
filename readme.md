@@ -1,4 +1,4 @@
-## Accompanied script for manuscript "Tumor-Associated Antigen Burden Associates with Immune Checkpoint Blockade Benefit in Non-exhausted Tumor Immune Context"
+## Accompanied script for manuscript "Tumor-Associated Antigen Burden Correlates with Immune Checkpoint Blockade Benefit in Non-exhausted Tumor Immune Context"
 
 ## License
 
@@ -67,6 +67,6 @@ Calculate tumor associated antigen burden based on putative TAAs identified by H
 TAA.burden = calculate.TAB.combine(
   tumor.expData = Tumor.exp, 
   normal.expData = GTEX_Normal.exp, 
-  TAA.List = c(HEPA.TAA.list,known.CT.antigen.list)
+  TAA.List = c(HEPA.TAA,known.CT.antigen.list)
 )
 ```
