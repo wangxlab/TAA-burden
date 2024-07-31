@@ -26,13 +26,14 @@ source("R/TAB.modules.Githubv1.R")
 
 To calculate CTA burden, we compared the tumor expression with the GTEx normal tissue expression data. The expression data in the tumor dataset and GTEx dataset were first normalized using quantile normalization. To mitigate batch effects between the tumor dataset, and the GTEX dataset, which gathers normal tissue data from healthy individuals, we employed the "ComBat" R package. The example tumor and normal expression datasets below are already quantile normalized, and batch-effect corrected.
 
-Load example tumor gene expression data.
+Load example tumor gene expression data. The dataset only included expression data of known and putative TAAs. Please replace this data with your own tumor gene expression dataset following the above normalization and batch effect correction with the GTEX dataset. 
 
 ```r
 load("Data/Tumor.exp.rda")
 ```
 
-Load sample information for GTEX normal tissue samples.
+Load sample information for GTEX normal tissue samples. The dataset only included expression data of known and putative TAAs. Please replace this data with the full GTEX bulk normal tissue TPM gene expression dataset following the above normalization and batch effect correction with the tumor dataset.
+GTEX data download link: https://gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression
 
 ```r
 load("Data/GTEX_Normal.exp.rda")
