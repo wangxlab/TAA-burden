@@ -32,7 +32,7 @@ Load example tumor gene expression data. The dataset only included expression da
 load("Data/Tumor.exp.rda")
 ```
 
-Load sample information for GTEX normal tissue samples. The dataset only included expression data of known and putative TAAs. Please replace this data with the full GTEX bulk normal tissue TPM gene expression dataset following the above normalization and batch effect correction with the tumor dataset.
+Load sample information for GTEX normal tissue samples. The dataset only included expression data of known and putative TAAs. Please replace this data with the GTEX bulk normal tissue TPM gene expression dataset following the above normalization and batch effect correction with the tumor dataset. Pleaese only use the 13280 somatic non-Immunoprivileged tissue samples included in the GTEX expression data provided in GTEX_Normal.exp.rda.
 GTEX data download link: https://gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression
 
 ```r
